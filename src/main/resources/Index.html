@@ -1,145 +1,51 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Portal</title>
+    <title>Student Attendance</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+    <h1>Student Attendance</h1>
+    <p>Attendance Management System</p>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h2>Attend<span>Ease</span></h2>
+    <h2>Mark Attendance</h2>
 
-        <ul>
-            <li class="active">Dashboard</li>
-            <li>Students</li>
-            <li>Attendance</li>
-            <li>Reports</li>
-            <li>Settings</li>
-        </ul>
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Attendance</th>
+        </tr>
 
-        <div class="logout">Logout</div>
-    </aside>
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td><span class="present">Present</span></td>
+        </tr>
 
-    <!-- Main Content -->
-    <main class="main-content">
+        <tr>
+            <td>102</td>
+            <td>Priya</td>
+            <td><span class="absent">Absent</span></td>
+        </tr>
 
-        <header>
-            <div>
-                <h1>Attendance Dashboard</h1>
-                <p>Welcome back! Here's today's overview.</p>
-            </div>
-            <div class="profile">
-                <span>Admin</span>
-                <div class="avatar">A</div>
-            </div>
-        </header>
+        <tr>
+            <td>103</td>
+            <td>Arun</td>
+            <td><span class="present">Present</span></td>
+        </tr>
 
-        <!-- Summary Cards -->
-        <section class="cards">
+        <tr>
+            <td>104</td>
+            <td>Sneha</td>
+            <td><span class="absent">Absent</span></td>
+        </tr>
+    </table>
 
-            <div class="card">
-                <h3>Total Students</h3>
-                <h2>250</h2>
-                <p>Registered students</p>
-            </div>
-
-            <div class="card present">
-                <h3>Present Today</h3>
-                <h2>210</h2>
-                <p>Students present</p>
-            </div>
-
-            <div class="card absent">
-                <h3>Absent Today</h3>
-                <h2>40</h2>
-                <p>Students absent</p>
-            </div>
-
-            <div class="card percentage">
-                <h3>Attendance Rate</h3>
-                <h2>84%</h2>
-                <p>Today's attendance</p>
-            </div>
-
-        </section>
-
-        <!-- Attendance Table -->
-        <section class="attendance-section">
-
-            <div class="section-header">
-                <h2>Student Attendance</h2>
-                <input type="date" id="date">
-            </div>
-
-            <div class="table-container">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Roll No</th>
-                        <th>Student Name</th>
-                        <th>Department</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    <tr>
-                        <td>101</td>
-                        <td>Rahul Kumar</td>
-                        <td>Computer Science</td>
-                        <td>05-11-2026</td>
-                        <td><span class="status present-status">Present</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>102</td>
-                        <td>Priya Sharma</td>
-                        <td>Information Science</td>
-                        <td>05-11-2026</td>
-                        <td><span class="status absent-status">Absent</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>103</td>
-                        <td>Arun Kumar</td>
-                        <td>Electronics</td>
-                        <td>05-11-2026</td>
-                        <td><span class="status present-status">Present</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>104</td>
-                        <td>Sneha R</td>
-                        <td>Computer Science</td>
-                        <td>05-11-2026</td>
-                        <td><span class="status present-status">Present</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>105</td>
-                        <td>Vikram Singh</td>
-                        <td>Mechanical</td>
-                        <td>05-11-2026</td>
-                        <td><span class="status absent-status">Absent</span></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </section>
-
-        <footer>
-            © 2026 AttendEase | Attendance Management System
-        </footer>
-
-    </main>
+    <button>Submit Attendance</button>
 </div>
 
 </body>
